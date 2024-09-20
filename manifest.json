@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "12-hour time",
+    "version": "1.0.0",
+    "description": "12 hour time extension 24 hour format to 12 hour format.",
+    "content_scripts": [
+        {
+            "js": [
+                "scripts/content.js"
+            ],
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "index.html"
+    },
+    "permissions": [
+        "scripting",
+        "activeTab"
+    ]
+}
