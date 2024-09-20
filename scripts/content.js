@@ -14,8 +14,6 @@ const convertTime = async () => {
 
       while (treeWalker.nextNode()) {
         const node = treeWalker.currentNode;
-        // node.data = node.data.toUpperCase();
-        // console.log(typeof node.data);
 
         if (/(\d{2}:\d{2})/.test(node.data)) {
           const numText = node.data;
@@ -31,7 +29,7 @@ const convertTime = async () => {
             minute: "numeric",
           });
 
-          node.data = timeString12hr;
+          node.data = node.data.replace(/(\d{2}:\d{2})/, timeString12hr);
         }
       }
     },

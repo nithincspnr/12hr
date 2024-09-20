@@ -1,8 +1,13 @@
 {
-    "manifest_version": 3,
-    "name": "12-hour time",
+    "name": "12 hour",
     "version": "1.0.0",
-    "description": "12 hour time extension 24 hour format to 12 hour format.",
+    "manifest_version": 3,
+    "description": "Converts 24 hour time format to 12 hour format",
+    "icons": {
+        "16": "images/icon-16.png",
+        "48": "images/icon-48.png",
+        "64": "images/icon-64.png"
+    },
     "content_scripts": [
         {
             "js": [
